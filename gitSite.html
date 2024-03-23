@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference for GIT project</title>
+    <link rel="stylesheet" href="css/myStyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="site_title">
+            <span class="git_color">Git </span>&nbsp;and&nbsp;<span class="vs_color"> VS</span>
+         </div>
+         <div class="site_description">
+             A Reference sheet for Git and VS Code related questions.
+         </div>
+    </div>
+    <section class="main_body">
+        <!-- left-hand section, does not scroll -->
+        <section class="static_col">
+            <div class="toc_head">
+                <h3>Table of Contents</h3>
+            </div>
+            <section class="toc_container">
+                <div class="toc_content" >
+                    <h3><a href="#understanding_git">Unsdertanding Git</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#understanding_vs">Understanding VS Code</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#clone_repos">Clone your Repsository in VS</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#branching">Branching with VS Code</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#commit_changes">Commit changes to File&lpar;s&rpar;</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#push_changes">Push Changes to Remote Repository</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#pull_req">Pull Requests</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#github_pages">Github Pages</a></h3>
+                </div>
+            </section>
+        </section>
+
+        <!-- right-hand section, can scroll vertically -->
+        <section class="scroll_col">
+
+            <div class="wide_block">
+                <h1>Before Anything...</h1>
+                <br>
+                <p>
+                    We have to understand what Git and VS Code is, so let's start with a quick breakdown of what each is and why they are important.
+                </p>
+            </div>
+            <!-- understanding Git -->
+            <section class="topic_container" id="understanding_git">
+                <div class="topic_head">
+                    <h2> Understanding <span class="git_color">Git</span></h2>
+                </div>
+                <div class="topic_body">
+                    <h3>What is it?</h3>
+                    <br>
+                    <p>
+                        Git is a version control system that developers use to manage and track changes in their code. It allows multiple people to work on the same project simultaneously without interfering with each other, 
+                        by creating and merging branches and handling conflicts. Git stores a history of all changes made to the project, enabling developers to revert to previous versions if necessary and to see who made which 
+                        changes and when. This makes it an essential tool for collaborative coding and managing complex projects.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- understanding VS code -->
+            <section class="topic_container" id="understanding_vs">
+                <div class="topic_head">
+                    <h2>Understanding <span class="vs_color">VS Code</span></h2>
+                </div>
+                <div class="topic_body">
+                    <h3>What is it?</h3>
+                    <br>
+                    <p>
+                        Visual Studio Code (VS Code) is a powerful and versatile code editor used by developers for writing, editing, and debugging code. It supports a wide range of programming languages 
+                        and comes with features like syntax highlighting, code completion, and integrated Git control, making coding more efficient and less error-prone. VS Code also offers a vast library 
+                        of extensions, allowing developers to customize their environment with additional tools and features to suit their specific needs, enhancing productivity in software development.
+                    </p>
+                </div>
+
+            </section>
+
+            <div class="wide_block">
+                <h1>Using <span class="git_color">Git</span> and <span class="vs_color">VS Code</span></h1>
+                <br>
+                <p>
+                    The purpose here is to show some basics about configuring Git to your repositories, and using git commands within VS Code. I'll introduce a topic and go over the steps to do it, and explain the importance in a nutshell. So let's start at the beginning.
+                </p>
+            </div>
+        
+            <!-- cloning repository in vs -->
+            <section class="topic_container" id="clone_repos">
+
+                <div class="topic_head">
+                    <h2>Clone your repository in <span class="vs_color">VS Code</span></h2>
+                </div>
+
+                <div class="topic_body">
+                    <h3>What is a Repository?</h3>
+                    <br>
+                    <p>
+                        A repository on GitHub is like a special folder for a project. It's where all the files, documents, and information related to that project are kept. 
+                        Think of it as a digital library bookshelf, where each book &lpar;or repository&rpar; holds all the pages &lpar;files&rpar; for one topic &lpar;project&rpar;. On GitHub, people can 
+                        work together on these projects, like adding new pages or editing existing ones, and everyone can see the changes. It's a way to organize, share, and 
+                        collaborate on projects online, even if you're not a tech expert.
+                    </p>
+                    <br>
+                    <div class="callout">
+                        <span class="emoji">&#x1F3C1;</span>
+                        <p>To start using VS Code and Git together, create a new repository in Github, then publish it. Afterwards, you can clone it in VS Code.</p>
+                    </div>
+                    <br>
+                    <h3>How to clone a repsository in <span class="vs_color">VS Code</span></h3>
+                    <div class="instructions">
+                        <ol class="numbered_steps">
+                            <li>Get the URL for the repository from Github.</li>
+                            <li>
+                                Open VS Code and select "clone git repository" from the welcom screen.
+                                If you are already working in VS, you can go to the 'source control' panel and open more options to select "clone".
+                            </li>
+                            <li>
+                                Enter the URL for your remote repository and proceed. This will create a copy of the repository on your local system.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="callout">
+                        <div class="emoji">&#128161;</div>
+                        <div><p>It will prompt you to set up a working directory for your repository. You should make a path that is intuitive to the project you are working on.</p></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Branching with vs -->
+            <section class="topic_container" id="branching">
+                <div class="topic_head">
+                    <h2>Branching with <span class="vs_color">VS Code</span></h2>
+                </div>
+                <div class="topic_body">
+                    <h3>What is Branching?</h3>
+                    <br>
+                    <p>
+                        Branching is basically how you separate spaces to work on a single project. You can create a branch from an existing branch, create a new branch entirely, 
+                        or create a detached branch. Each of these options have their own purpose, but the main idea is branching isolates changes you make. This keeps the 
+                        integrity of your main branch together, and also manages what spaces people are working in. If you think about feature development, this allows a team to 
+                        have individual branches for specific features, all of which can be created from the same main branch, and experiment before implementing them into the main branch.
+                    </p>
+                    <br>
+                    <p>This is also the same for bug fixes, as developers can assess and experiment with solutions or breaking in another branch so the in-progress edits do not affect the main branch</p>
+                    <br>
+                    <div class="callout">
+                        <span class="emoji">&#128273;</span>
+                        <div>
+                            <p>
+                                For more in-depth information on branches, 
+                            </p>
+                            <p>
+                                look <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Creating branches in <span class="vs_color">VS Code</span></h3>
+                    <br>
+                    <p>
+                        Creating branches in VS can be done easily by accessing the command panel &lpar;comman+shift+p&rpar;.
+                    </p>
+                    <br>
+                    <p>From here, choose which option suits your needs:</p>
+                    <div class="instructions">
+                        <ol class="numbered_steps" type="a">
+                            <li>Create new Branch</li>
+                            <li>Create new Branch from...</li>
+                            <li>Create new Branch &lpar;detached&rpar;</li>
+                        </ol>
+                    </div>
+                    <p>
+                        Once you have your branch created, you can commit changes (sync changes) to update the remote repository, or you can keep the branch local.
+                    </p>
+                    <div class="callout">
+                        <span class="emoji">&#128161;</span>
+                        <div>
+                            <p>
+                                If you want to learn more about 'detached' branches,
+                            </p>
+                            <p>
+                                look <a href="https://www.cloudbees.com/blog/git-detached-head">here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- committing changes to a file -->
+            <section class="topic_container" id="commit_changes">
+                <div class="topic_head">
+                    <h2>Commit changes to File&lpar;s&rpar;</h2>
+                </div>
+                <div class="topic_body">
+                    <!-- consider taking htis out of a callout -->
+                    <div class="callout">
+                        <span class="emoji">&#128680;</span>
+                        <div>
+                            <p>
+                                You have to make sure git is configured on your local repository first. This only needs to be done once for each cloned repository.
+                            </p>
+                            <div class="instructions">
+                                <ol class="numbered_steps">
+                                    <li>Open the terminal in VS Code</li>
+                                    <li>Using your Github username and email, in terminal:</li>
+                                    <!-- fix styling for lists in callouts -->
+                                    <div class="instructions">
+                                        <ol type="a" class="numbered_steps">
+                                            <li>Enter <span class="green_type">git config user.name "[your username]"</span></li>
+                                            <li>Enter <span class="green_type">git config user.email "[your email]"</span></li>
+                                        </ol>
+
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>What are Commits?</h3>
+                    <br>
+                    <p>
+                        Think of a commit on GitHub as a bookmark in a notebook. When you make changes to your project 
+                        &lpar;like writing or editing pages in the notebook&rpar;, a commit marks exactly what changes you made at that moment. 
+                        It's like saying, "Here's what I added or changed on this page today." This bookmark helps you and others see 
+                        the history of changes made over time. It's a way of keeping track of all the small or big updates you make, 
+                        like a diary entry for your project, making it easy to understand how the project has evolved.
+                    </p>
+                    <br>
+                    <h3>How to Commit in <span class="vs_color">VS Code</span></h3>
+                    <div class="instructions">
+                        <ol class="numbered_steps">
+                            <li>Create whatever files or changes to a file that you want.</li>
+                            <li>Hit “stage changes” while you hover over the file tab &lpar;its the plus sign&rpar;</li>
+                            <li>Add a brief message explaining what your changes were, then hit “commit”</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- pushing changes to remote repository from vs -->
+            <section class="topic_container" id="push_changes">
+                <div class="topic_head">
+                    <h2>Push Changes to Remote Repository, <span class="gh_color">Github</span></h2>
+                </div>
+                <div class="topic_body">
+                    <h3>What is a Push?</h3>
+                    <br>
+                    <p>
+                        Imagine you've made a bunch of changes in a scrapbook at home &lpar;this is like editing files in a local repository on your computer&rpar;. 
+                        "Pushing" these changes to a remote repository, like GitHub, is like sending photocopies of your updated scrapbook pages to a public 
+                        library. This way, your updated pages are available in the library for others to see and use &lpar;the GitHub repository&rpar;. So, pushing is 
+                        essentially the act of sharing your local updates with the wider world on the internet, making your latest work accessible to others 
+                        and ensuring that the public library &lpar;GitHub&rpar; has the most current version of your project.
+                    </p>
+                    <br>
+                    <p>
+                        This might sound similar to commits, but they are still very different. If commits note what the changes are on your local repository, then pushing those changes
+                        is basically sending the commit&lpar;s&rpar; to the remote repository. The message you leave in a commit is even more necessary here since other collaborators need to
+                        know about the changes you made.
+                    </p>
+                    <br>
+                    <h3>How to Push Changes in <span class="vs_color">VS Code</span></h3>
+                    <br>
+                    <div class="instrcutions">
+                        <ol class="numbered_steps">
+                            <li>Navigate to "source control" while in VS Code</li>
+                            <li>Hit "sync changes"</li>
+                        </ol>
+                    </div>
+                    <div class="callout">
+                        <span class="emoji">&#128161;</span>
+                        <p>
+                           Using “sync changes” will both pull and push from the remote repository.  This is an easy way to keep your local repository current with the project. If you do not want to use this method, you can also use the ellipses in the side panel of the “source control” menu. This opens a list of options (push, pull, clone, fetch) to choose from.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- pull requests -->
+            <section class="topic_container" id="pull_req">
+                <div class="topic_head">
+                    <h2>Pull Requests</h2>
+                </div>
+                <div class="topic_body">
+                    <h3>My thoughts on Pull Requests</h3>
+                    <br>
+                    <p>
+                        A pull request on GitHub is like putting a suggestion box in a community center. Imagine you've made some great changes or improvements to a project 
+                        you found at the center &lpar;like a shared recipe book&rpar;. Instead of just replacing the original, you put your suggestions &lpar;your updated pages&rpar; in the 
+                        suggestion box. This is your pull request. It's a way of saying, "Hey, I made some changes I think are good, can we add them to the original project?" 
+                        The community &lpar;or project owners&rpar; can then review your suggestions, discuss them, and decide whether to incorporate them into the main project. It's a 
+                        collaborative and respectful way of contributing improvements to a shared project.
+                    </p>
+                    <br>
+                    <div class="callout">
+                        <span class="emoji">&#128161;</span>
+                        <p>To create pull requests in VS Code, you need to install the extension <span class="green_type">GitHub Pull Requests and Issues</span>.</p>
+                    </div>
+                    <br>
+                    <iframe src="https://www.youtube.com/embed/For9VtrQx58?si=MDGapKy-uK6dCo6W"></iframe>
+                </div>
+            </section>
+
+            <!-- GitHub pages and hosting on github -->
+            <section class="topic_container" id="github_pages">
+                <div class="topic_head">
+                    <h2><span class="gh_color">Github</span> Pages</h2>
+                </div>
+                <div class="topic_body">
+                    <h3>What is <span class="gh_color">Github</span> Pages?</h3>
+                    <br>
+                    <p>
+                        GitHub Pages is a service provided by GitHub that allows you to host a website directly from your GitHub repository, making it an excellent choice for deploying a website. 
+                        It's especially beneficial because it's free, easy to set up, and integrates seamlessly with Git version control. This means you can update your website simply by pushing 
+                        updates to your repository. GitHub Pages is ideal for personal, project, or documentation websites, as it supports static site generators like Jekyll for more complex projects. 
+                        Its simplicity and integration with GitHub's ecosystem make it a popular choice for developers looking to quickly and efficiently publish their work online.
+                    </p>
+                    <div class="callout">
+                        <span class="emoji">&#128680;</span>
+                        <p>
+                            Make sure you have made a respository for your project on Github.
+                        </p>
+                    </div>
+                    <br>
+                    <iframe src="https://www.youtube.com/embed/OltY8JIaP-4?si=pWHnSFeP2uSVl6m3"></iframe>
+                    <br>
+                </div>
+            </section>
+
+        </section>
+
+    </section>
+    <script src="js/myScript.js"></script>
+</body>
+</html>
