@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM and Package Management</title>
+</head>
+<body> <!--h1, h2, and h3 are used in this html-->
+    <h1>Understanding NPM and Managing Packages</h1>
+    <h2>Create and Manage a package.json File</h2>
+        <h3>Prerequisites</h3>
+        <p>Before creating a package.json file, there are a few things you need to install.</p>
+        <p>A Node version manager</p>
+        <p>Node.js</p>
+        <p>npm</p>
+        <h3>Installation</h3>
+        <p>Together, npm is installed with Node.js, which means you have to install Node.js to get npm 
+            installed on your computer.</p>
+        <p>Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system.</p>
+        <p>Before installing Node.js and npm, you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm">nvm</a>.</p>
+        <p>You can download Node.js from the official web site <a href ="https://nodejs.org">https://nodejs.org</a>, which also has instructions to run the install.</p>
+        <p>To get started with npm, <a href ="https://www.npmjs.com/signup">create an account</a>.</p>
+        <p>After you set up an npm account, use the command line interface (CLI) to install npm.</p>
+        <p>Run the following command to download the latest version:</p>
+            <p>npm install -g npm</p>
+        <p>You can check your version of Node.js and npm by typing in the commands:</p>
+            <p>node -v</p>
+            <p>npm -v</p>
+    <h1>Install, Update, and Remove Packages</h1>
+    <p>Something about section</p>
+            <ol>
+                <li>If you have not already, <a href ="https://www.npmjs.com/">create an npm account</a>.</li>
+                <li>Search for specific packages in the top search bar. Also in the center you can click 
+                    on one of the categories below Popular libraries or Discover packages.</li>
+                <li>After you have clicked on the package you want, copy the package name on the far right of the page under Install.</li>
+                <li>Navigate to the command line and type npm install [package_name]. </li>
+                <li>If you are installing a scoped package, reference the scope name during installation. (ex. npm install [@scope/package-name]).</li>
+            </ol>
+    <h1>Understanding and Managing Dependencies</h1>
+    <p>A dependency is a relationship between two pieces of software where one piece of software relies on the other to function properly. 
+        Use dependencies to define the external packages or modules that your project needs to run properly. These external packages can 
+        be libraries, frameworks, tools, or any other module that your code relies on to function correctly. In the package.json file, 
+        there is an object called dependencies and it consists of all the packages that are used in the project with its version number. 
+        By specifying these dependencies in the package.json file, you can ensure that anyone who downloads or clones your project has all 
+        the necessary packages and dependencies installed. </p>
+</body>
+</html>
