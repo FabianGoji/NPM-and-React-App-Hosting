@@ -8,42 +8,178 @@
     <title>NPM and Package Management</title>
 </head>
 <body> <!--h1, h2, and h3 are used in this html-->
-    <h1>Understanding NPM and Managing Packages</h1>
-    <h2>Create and Manage a package.json File</h2>
-        <h3>Prerequisites</h3>
-        <p>Before creating a package.json file, there are a few things you need to install.</p>
-        <p>A Node version manager</p>
-        <p>Node.js</p>
-        <p>npm</p>
-        <h3>Installation</h3>
-        <p>Together, npm is installed with Node.js, which means you have to install Node.js to get npm 
-            installed on your computer.</p>
-        <p>Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system.</p>
-        <p>Before installing Node.js and npm, you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm">nvm</a>.</p>
-        <p>You can download Node.js from the official web site <a href ="https://nodejs.org">https://nodejs.org</a>, which also has instructions to run the install.</p>
-        <p>To get started with npm, <a href ="https://www.npmjs.com/signup">create an account</a>.</p>
-        <p>After you set up an npm account, use the command line interface (CLI) to install npm.</p>
-        <p>Run the following command to download the latest version:</p>
-            <p>npm install -g npm</p>
-        <p>You can check your version of Node.js and npm by typing in the commands:</p>
-            <p>node -v</p>
-            <p>npm -v</p>
-    <h1>Install, Update, and Remove Packages</h1>
-    <p>Something about section</p>
-            <ol>
-                <li>If you have not already, <a href ="https://www.npmjs.com/">create an npm account</a>.</li>
-                <li>Search for specific packages in the top search bar. Also in the center you can click 
-                    on one of the categories below Popular libraries or Discover packages.</li>
-                <li>After you have clicked on the package you want, copy the package name on the far right of the page under Install.</li>
-                <li>Navigate to the command line and type npm install [package_name]. </li>
-                <li>If you are installing a scoped package, reference the scope name during installation. (ex. npm install [@scope/package-name]).</li>
-            </ol>
-    <h1>Understanding and Managing Dependencies</h1>
-    <p>A dependency is a relationship between two pieces of software where one piece of software relies on the other to function properly. 
-        Use dependencies to define the external packages or modules that your project needs to run properly. These external packages can 
-        be libraries, frameworks, tools, or any other module that your code relies on to function correctly. In the package.json file, 
-        there is an object called dependencies and it consists of all the packages that are used in the project with its version number. 
-        By specifying these dependencies in the package.json file, you can ensure that anyone who downloads or clones your project has all 
-        the necessary packages and dependencies installed. </p>
+    <div class="header">
+        <div class="site_title"> 
+            <span class="git_color">NPM </span>&nbsp;and&nbsp;<span class="vs_color"> Hosting</span>
+         </div>
+         <div class="site_description">
+            Install NPM and Manage Packages
+         </div>
+    </div>
+    <section class="main_body">
+        <!-- left-hand section, does not scroll -->
+        <section class="static_col">
+            <div class="toc_head">
+                <h3>Table of Contents</h3>
+            </div>
+            <section class="toc_container">
+                <div class="toc_content" >
+                    <h3><a href="#John">Home</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="npm-package-management.html">Install NPM and Manage Packages</a></h3>
+                </div>
+            </section>
+        </section>
+        <!-- right-hand section, can scroll vertically -->
+        <section class="scroll_col">
+            <div class="wide_block">
+                <h1>Introduction</h1>
+                <br>
+                <p>
+                    Now that you have an understanding of what NPM and React hosting are, why they are important, and 
+                    how they integrate into the MERN stack, you can begin installing, updating, and removing packages. 
+                    The steps below are to guide you in familiarizing yourself with the procedures. 
+                </p>
+            </div>
+
+            <!-- Create and Manage a package.json File -->
+            <div class="wide_block">
+                <h1>Create and Manage a package.json File</h1>
+                <br>
+                <p>
+                    This section provides information about what you need and why before you can begin installing
+                    NPM. 
+                </p>
+            </div>
+            <section class="topic_container" id="understanding_git">
+                <div class="topic_head">
+                    <h2>What You Need</h2>
+                </div>
+                <div class="topic_body">
+                    <p>
+                        To create a package.json file, there are a few things you need to install.
+                    </p>
+                    <ul id="bulletlist">
+                        <li>A Node version manager</li> 
+                        <li>Node.js</li>
+                        <li>NPM</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- installation -->
+            
+            <section class="topic_container" id="understanding_vs">
+                <div class="topic_head">
+                    <h2>Why You Need It</h2>
+                </div>
+                <div class="topic_body">
+                    <p>
+                        Together, NPM is installed with Node.js, which means you have to install Node.js to get NPM 
+                        installed on your computer. Node version managers allow you to install and switch between 
+                        multiple versions of Node.js and NPM on your system. Before installing Node.js and NPM, 
+                        you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm">nvm</a>.
+                        You can download Node.js from the official web site <a href ="https://nodejs.org">https://nodejs.org</a>, 
+                        which also has instructions to run the install.
+                    </p>
+                </div>
+            </section>
+
+            <section class="topic_container" id="understanding_git">
+                <div class="topic_head">
+                    <h2>Get Started</h2>
+                </div>
+                <div class="topic_body">
+                    <p>
+                        To get started with NPM, <a href ="https://www.npmjs.com/signup">create an account</a>. 
+                        After you set up an NPM account, use the Command Line Interface (CLI) to install NPM.
+                        <br><br>
+                        Run the following command to download the latest version: <code>npm install -g npm</code>
+                        <br><br> 
+                        You can check your version of Node.js and NPM by typing in the commands:
+                        <ul id="bulletlist">
+                            <code>
+                            <li>node -v</li> 
+                            <li>npm -v</li>
+                            </code>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+            <div class="wide_block">
+                <h1>Install, Update, and Remove Packages</h1>
+                <br>
+                <p>
+                    The purpose here is to provide guidance about NPM packages. 
+                </p>
+            </div>
+
+            <!-- install and manage npm -->
+            <section class="topic_container" id="understanding_vs">
+                <div class="topic_head">
+                    <h2>Install an <span class="git_color">NPM</span> Package</h2>
+                </div>
+                <div class="topic_body">
+                    <ol>
+                        <li>If you have not already, <a href ="https://www.npmjs.com/">create an npm account</a>.</li>
+                        <li>Search for specific packages in the top search bar. Also in the center you can click 
+                            on one of the categories below Popular libraries or Discover packages.</li>
+                        <li>After you have clicked on the package you want, copy the package name on the far right of the page under Install.</li>
+                        <li>Navigate to the command line and type <code>npm install [package_name]. </code></li>
+                        <li>If you are installing a scoped package, reference the scope name during installation. (ex. npm install [@scope/package-name]).</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="topic_container" id="understanding_vs">
+                <div class="topic_head">
+                    <h2>Update an <span class="git_color">NPM</span> Package</h2>
+                </div>
+                <div class="topic_body">
+                    <p>
+                        You can <a href="https://docs.npmjs.com/updating-packages-downloaded-from-the-registry">follow the steps</a> on the NPM website to update your package.
+                    </p>
+                </div>
+            </section>
+
+            <section class="topic_container" id="understanding_vs">
+                <div class="topic_head">
+                    <h2>Remove an <span class="git_color">NPM</span> Package</h2>
+                </div>
+                <div class="topic_body">
+                    <p>
+                        You can <a href="https://docs.npmjs.com/uninstalling-packages-and-dependencies">follow the steps</a> on the NPM website to remove your package.
+                    </p>
+                </div>
+            </section>
+
+            <div class="wide_block">
+                <h1>Understanding and Managing Dependencies</h1>
+                <br>
+                <p>
+                    Since you have learned what dependencies are, this section explains how to manage them. 
+                </p>
+            </div>
+
+            <section class="topic_container" id="understanding_vs">
+                <div class="topic_head">
+                    <h2>Managing a Dependency</h2>
+                </div>
+
+                <div class="topic_body">
+                    <p> A dependency is a relationship between two pieces of software where one piece of software relies on the other to function properly. 
+                        Use dependencies to define the external packages or modules that your project needs to run properly. These external packages can 
+                        be libraries, frameworks, tools, or any other module that your code relies on to function correctly. 
+                        <br><br>
+                        In the package.json file, dependencies consist of all the packages used in the project with the version number. By specifying 
+                        these dependencies in the package.json file, you can ensure that anyone who downloads or clones your project has all the 
+                        necessary packages and dependencies installed. When you uninstall an NPM package, you also remove the package from the dependencies. 
+                    </p>
+                </div>
+    
+    </section>
+    </section>
 </body>
 </html>

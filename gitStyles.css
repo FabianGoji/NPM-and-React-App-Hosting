@@ -77,6 +77,14 @@ p{
     line-height: 1.5em;
     color:rgb(229, 229, 229);
 }
+li{
+    font-family: 'Geneva', sans-serif;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color:rgb(229, 229, 229);
+    margin-left: 40px;
+}
 
 /* ---------- Special characters & symbols -------- */
 hr{
