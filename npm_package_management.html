@@ -23,19 +23,37 @@
                 <h3>Table of Contents</h3>
             </div>
             <section class="toc_container">
-                <div class="toc_content" >
-                    <h3><a href="#John">Home</a></h3>
+                <div class="toc_content">
+                    <h3><a href="#understand_npm">Understanding NPM</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="npm-package-management.html">Install NPM and Manage Packages</a></h3>
+                    <h3><a href="#understand_react">Understanding React Hosting</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#getting_started">Getting Started With NPM</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#manage_json">Create and Manage package.json File</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#manage_packages">Install, Update, and Remove Packages</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#manage_dependency">Manage Dependencies</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#npm_scripts">NPM Scripts for Automation</a></h3>
                 </div>
             </section>
         </section>
+
         <!-- right-hand section, can scroll vertically -->
         <section class="scroll_col">
+
             <div class="wide_block">
                 <h1>Introduction</h1>
                 <br>
+                <!-- need to rewrite this -->
                 <p>
                     Now that you have an understanding of what NPM and React hosting are, why they are important, and 
                     how they integrate into the MERN stack, you can begin installing, updating, and removing packages. 
@@ -43,56 +61,80 @@
                 </p>
             </div>
 
-            <!-- Create and Manage a package.json File -->
-            <div class="wide_block">
-                <h1>Create and Manage a package.json File</h1>
-                <br>
-                <p>
-                    This section provides information about what you need and why before you can begin installing
-                    NPM. 
-                </p>
-            </div>
-            <section class="topic_container" id="understanding_git">
+            <!-- understanding npm -->
+            <section class="topic_container" id="understand_npm">
                 <div class="topic_head">
-                    <h2>What You Need</h2>
+                    <h1>Understanding NPM</h1>
                 </div>
                 <div class="topic_body">
+                    <div class="topic_subHead">
+                        <h2>What is NPM?</h2>
+                        <p>
+                            Makes it easier for JS devs to share code they've created to solve problems and other devs to use in their own applications. NPM makes it easy to see changes and updates.
+                            AKA reuse code from other devs and a way to share your own code and manage different versions of code.
+                        </p>
+                    </div>
+                    <div class="topic_subHead">
+                        <h2>What is the Signficance of NPM?</h2>
+                        <p>
+                            NPM (Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node. js. NPM allows you to install and manage packages, or collections of code written by other developers, that can be easily reused in your own project.
+                        </p>
+                    </div>
+                    <div class="topic_subHead">
+                        <h2>How Does NPM work with MERN?</h2>
+                        <p>
+                            It manages packages which are part of MERN such as node.js. It installs and manages these parts of MERN for other devs to collaborate. 
+                            Here is a list of steps to integrate NPM : <br>
+                            <a href = "https://www.uxpin.com/docs/merge/npm-integration/#step-1-add-a-library-using-npm-integration" target="_blank">NPM integration</a>
+                        </p>
+                    </div>
+                    <div class="callout">
+                        <span class="emoji">&#128273;</span>
+                        <div>
+                            <p>
+                                For more in-depth information on MERN, 
+                            </p>
+                            <p>
+                                look <a href="https://www.mongodb.com/mern-stack">here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- understanding react hosting -->
+            <section class="topic_container" id="understand_react">
+                <div class="topic_head">
+                    <h1>Understanding React App Hosting</h1>
+                </div>
+                <div class="topic_body">
+                    <div class="topic_subHead">
+                        <h2>What is React?</h2>
+                        <p>
+                            "React hosting" is the essential process of taking a React.js application—a JavaScript library highly favored for building dynamic and interactive user interfaces—and making it accessible over the internet by deploying it onto web servers provided by hosting services. This process involves several key steps. Initially, developers craft their application using React.js, leveraging its component-based architecture to structure their user interface and manage application state efficiently. Once the application is developed, it undergoes optimization for production, which entails tasks such as minimizing file sizes, bundling JavaScript files, and removing development-specific code to enhance performance and load times. Following optimization, developers must select a hosting provider from a range of options available, such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Heroku, Netlify, Vercel, or GitHub Pages. Each hosting provider offers different features, scalability options, and pricing models, so the choice depends on the specific requirements of the project. Once a hosting provider is chosen, the deployment process begins. This typically involves uploading the optimized build files to the hosting provider's servers and configuring settings such as domain names, SSL certificates, and server configurations to ensure smooth operation of the application. After deployment, developers must monitor the application's performance, handling any issues that may arise, and scaling hosting resources as needed to accommodate increasing traffic and usage. Through React hosting, developers can bring their React.js applications to life on the web, enabling users worldwide to access and interact with their creations seamlessly.
+                        </p>
+                    </div>
+                    <div class="topic_subHead">
+                        <h2>Publishing Path for a React Application</h2>
+                    </div>
                     <p>
-                        To create a package.json file, there are a few things you need to install.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis voluptas sunt unde quidem cupiditate 
+                        dolorum similique voluptatibus. Repellat, molestias dolore sunt a eveniet eaque doloribus sed est aperiam 
+                        temporibus.
                     </p>
-                    <ul id="bulletlist">
-                        <li>A Node version manager</li> 
-                        <li>Node.js</li>
-                        <li>NPM</li>
-                    </ul>
+                    <!-- <div class="topic_subHead">
+                        <h2>What is the Signficance of React?</h2>
+                    </div> -->
                 </div>
             </section>
 
-            <!-- installation -->
-            
-            <section class="topic_container" id="understanding_vs">
+            <!-- Getting started with NPM -->
+            <section class="topic_container" id="getting_started">
                 <div class="topic_head">
-                    <h2>Why You Need It</h2>
+                    <h1>Getting Started with NPM</h1>
                 </div>
                 <div class="topic_body">
                     <p>
-                        Together, NPM is installed with Node.js, which means you have to install Node.js to get NPM 
-                        installed on your computer. Node version managers allow you to install and switch between 
-                        multiple versions of Node.js and NPM on your system. Before installing Node.js and NPM, 
-                        you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm">nvm</a>.
-                        You can download Node.js from the official web site <a href ="https://nodejs.org">https://nodejs.org</a>, 
-                        which also has instructions to run the install.
-                    </p>
-                </div>
-            </section>
-
-            <section class="topic_container" id="understanding_git">
-                <div class="topic_head">
-                    <h2>Get Started</h2>
-                </div>
-                <div class="topic_body">
-                    <p>
-                        To get started with NPM, <a href ="https://www.npmjs.com/signup">create an account</a>. 
+                        To get started with NPM, <a href ="https://www.npmjs.com/signup" target="_blank">create an account</a>. 
                         After you set up an NPM account, use the Command Line Interface (CLI) to install NPM.
                         <br><br>
                         Run the following command to download the latest version: <code>npm install -g npm</code>
@@ -108,78 +150,194 @@
                 </div>
             </section>
 
-            <div class="wide_block">
-                <h1>Install, Update, and Remove Packages</h1>
-                <br>
-                <p>
-                    The purpose here is to provide guidance about NPM packages. 
-                </p>
-            </div>
-
-            <!-- install and manage npm -->
-            <section class="topic_container" id="understanding_vs">
+            <!-- Create and Manage a package.json File -->
+            <section class="topic_container" id="manage_json">
                 <div class="topic_head">
-                    <h2>Install an <span class="git_color">NPM</span> Package</h2>
+                    <h1>Create and Manage a <span class="green_type">package.json</span> File</h1>
                 </div>
                 <div class="topic_body">
+
+                    <p>
+                        This section provides information about what you need and why before you can begin installing
+                        NPM. 
+                    </p>
+                    <div class="topic_subHead">
+                        <h2>What You Need</h2>
+                    </div>
+                    <p>
+                        To create a package.json file, there are a few things you need to install.
+                    </p>
+                    <ul id="bulletlist">
+                        <li>A Node version manager</li> 
+                        <li>Node.js</li>
+                        <li>NPM</li>
+                    </ul>
+
+                    <div class="topic_subHead">
+                        <h2>Why You Need It</h2>
+                    </div>
+                    <p>
+                        Together, NPM is installed with Node.js, which means you have to install Node.js to get NPM 
+                        installed on your computer. Node version managers allow you to install and switch between 
+                        multiple versions of Node.js and NPM on your system. Before installing Node.js and NPM, 
+                        you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm" target="_blank">nvm</a>.
+                        You can download Node.js from the official web site <a href ="https://nodejs.org" target="_blank">https://nodejs.org</a>, 
+                        which also has instructions to run the install.
+                    </p>
+                </div>
+            </section>
+
+            <!-- install, update, remove packages-->
+            <section class="topic_container" id="manage_packages">
+                <div class="topic_head">
+                    <h1>Install, Update, and Remove Packages</h1>
+                </div>
+                <div class="topic_body">
+
+                    <!-- can probably make this a callout -->
+                    <p>
+                        The purpose here is to provide guidance about NPM packages. 
+                    </p>
+
+                    <div class="topic_subHead">
+                        <h2>Install an NPM Package</h2>
+                    </div>
                     <ol>
-                        <li>If you have not already, <a href ="https://www.npmjs.com/">create an npm account</a>.</li>
+                        <li>If you have not already, <a href ="https://www.npmjs.com/" target="_blank">create an npm account</a>.</li>
                         <li>Search for specific packages in the top search bar. Also in the center you can click 
                             on one of the categories below Popular libraries or Discover packages.</li>
                         <li>After you have clicked on the package you want, copy the package name on the far right of the page under Install.</li>
                         <li>Navigate to the command line and type <code>npm install [package_name]. </code></li>
                         <li>If you are installing a scoped package, reference the scope name during installation. (ex. npm install [@scope/package-name]).</li>
                     </ol>
-                </div>
-            </section>
 
-            <section class="topic_container" id="understanding_vs">
-                <div class="topic_head">
-                    <h2>Update an <span class="git_color">NPM</span> Package</h2>
-                </div>
-                <div class="topic_body">
+                    <div class="topic_subHead">
+                        <h2>Update an NPM Package</h2>
+                    </div>
                     <p>
-                        You can <a href="https://docs.npmjs.com/updating-packages-downloaded-from-the-registry">follow the steps</a> on the NPM website to update your package.
+                        You can <a href="https://docs.npmjs.com/updating-packages-downloaded-from-the-registry" target="_blank">follow the steps</a> on the NPM website to update your package.
                     </p>
-                </div>
-            </section>
 
-            <section class="topic_container" id="understanding_vs">
-                <div class="topic_head">
-                    <h2>Remove an <span class="git_color">NPM</span> Package</h2>
-                </div>
-                <div class="topic_body">
+                    <div class="topic_subHead">
+                        <h2>Remove an NPM Package</h2>
+                    </div>
                     <p>
-                        You can <a href="https://docs.npmjs.com/uninstalling-packages-and-dependencies">follow the steps</a> on the NPM website to remove your package.
+                        You can <a href="https://docs.npmjs.com/uninstalling-packages-and-dependencies" target="_blank">follow the steps</a> on the NPM website to remove your package.
                     </p>
+
                 </div>
             </section>
 
-            <div class="wide_block">
-                <h1>Understanding and Managing Dependencies</h1>
-                <br>
-                <p>
-                    Since you have learned what dependencies are, this section explains how to manage them. 
-                </p>
-            </div>
+            <section class="topic_container" id="manage_dependency">
 
-            <section class="topic_container" id="understanding_vs">
                 <div class="topic_head">
-                    <h2>Managing a Dependency</h2>
+                    <h1>Managing a Dependency</h1>
                 </div>
-
                 <div class="topic_body">
-                    <p> A dependency is a relationship between two pieces of software where one piece of software relies on the other to function properly. 
+                    <p> 
+                        A dependency is a relationship between two pieces of software where one piece of software relies on the other to function properly. 
                         Use dependencies to define the external packages or modules that your project needs to run properly. These external packages can 
                         be libraries, frameworks, tools, or any other module that your code relies on to function correctly. 
-                        <br><br>
+                    </p>
+                    <br>
+                    <p>
                         In the package.json file, dependencies consist of all the packages used in the project with the version number. By specifying 
                         these dependencies in the package.json file, you can ensure that anyone who downloads or clones your project has all the 
-                        necessary packages and dependencies installed. When you uninstall an NPM package, you also remove the package from the dependencies. 
+                        necessary packages and dependencies installed. When you uninstall an NPM package, you also remove the package from the dependencies
                     </p>
                 </div>
     
+            </section>
+
+            <section class="topic_container" id="npm_scripts">
+
+                <div class="topic_head">
+                    <h1>NPM Scripts for Automation</h1>
+                </div>
+                <div class="topic_body">
+                    <div class="callout">
+                        <span class="emoji">&#128273;</span>
+                        <div>
+                            <p>
+                                For more in-depth information on NPM scripts, 
+                            </p>
+                            <p>
+                                look <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches" target="_blank">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        NPM scripts are commands that can be run in the terminal to initiate an action. Defining these terminal commands in your package.json 
+                        file can help automate the process. This is done by making a field called “scripts” and adding entries that detail the command name and 
+                        subsequent action to be performed. Development tasks are often repetitive, so being able to duplicate them across projects or be cloned 
+                        by other developers is important. The “introduction to npm scripts” article published by GeeksforGeeks explains that “NPM scripts are 
+                        used to automate tasks like minifying CSS, uglifying JavaScript, building project. 
+                    </p>
+                    <br>
+                    <p>
+                        NPM scripts are versatile and simple and by learning fewer tools, we can automate tasks in our web project.” When writing your entries 
+                        in the scripts field, its best to stick to traditional terms for commands that perform universal actions. By this we mean tasks that are 
+                        routine and standardized. Its import to use commonly recognized terms because other developers kind use them more intuitively; additionally, 
+                        devOps and instrumentation tools are better utilized with consistent script names. Note: If you make a default package.json file, then the 
+                        scripts field will be automatically populated with the necessary scripts needed, but you will need to adjust the details of their actions for your project.
+                    </p>
+                    
+                    <div class="topic_subHead">
+                        <h2>Common Scripts Names</h2>
+                    </div>
+                    <p>
+                        These are some of the common script names to keep as default.
+                    </p>
+                    <br>
+                    <p class="green_type">
+                                “start” : “node [directing path to app]”,<br>
+                                “test”: “jest”, <br>
+                                “build”: “tsc”,<br>
+                                “lint”: “lint” <br>
+                    </p>
+                    <br>
+                    <p>
+                        Running your scripts is done through the terminal, and can be done by entering
+                    </p>
+                    <br>
+                    <p>
+                        <span class="green_type">npm run [script name]</span> 
+                    </p>
+                    <br>
+                    <p>
+                        You can run commands for testing, launching, or displaying content but can also nest commands within each other. 
+                        For example, the following entry defines the ‘start’ command as another command to run “lite”.
+                    </p>
+                    <br>
+                    <p class="green_type">
+                            “scripts”:<br>
+                                “start”: “npm run lite”,<br>
+                                “lite”: “lite-server”<br>   
+                    </p>
+                    <br>
+                    <p>
+                        So you could run the command “lite” by entering “npm start” in the terminal.
+
+                    </p>
+
+                    <div class="callout">
+                        <span class="emoji">&#128273;</span>
+                        <div>
+                            <p>
+                                To look at what types of tasks can be automated,
+                            </p>
+                            <p>
+                                look <a href="https://www.geeksforgeeks.org/introduction-to-npm-scripts/" target="_blank">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </section>
+
+        </section>
     </section>
-    </section>
+    <script src="ourScript.js"></script>
 </body>
 </html>
