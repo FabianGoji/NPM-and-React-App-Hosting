@@ -1,20 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- needs work -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPM and React Hosting</title>
-    <link rel="stylesheet" href="gitStyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>NPM and Package Management</title>
 </head>
-<body>
+<body> <!--h1, h2, and h3 are used in this html-->
     <div class="header">
-        <div class="site_title">
-            <span class="git_color">NPM </span>&nbsp;and&nbsp;<span class="vs_color">Hosting</span>
+        <div class="site_title"> 
+            <span class="git_color">NPM </span>&nbsp;and&nbsp;<span class="vs_color"> Hosting</span>
          </div>
          <div class="site_description">
-             A Reference sheet for NPM and Hosting!
+            A Reference for NPM and React App Hosting
          </div>
     </div>
     <section class="main_body">
@@ -24,30 +23,30 @@
                 <h3>Table of Contents</h3>
             </div>
             <section class="toc_container">
-                <div class="toc_content" >
-                    <h3><a href="#understanding_npm">Understanding NPM</a></h3>
+                <div class="toc_content">
+                    <h3><a href="#understand_npm">Understanding NPM</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#understanding_hosting">Understanding React Hosting</a></h3>
+                    <h3><a href="#understand_react">Understanding React Hosting</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#significance">Significance of NPM</a></h3>
+                    <h3><a href="#getting_started">Getting Started With NPM</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#mern_int">MERN integration</a></h3>
+                    <h3><a href="#manage_json">Create and Manage package.json File</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#common_config">Common configuration</a></h3>
+                    <h3><a href="#manage_packages">Install, Update, and Remove Packages</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#common_func">Common Functionality</a></h3>
+                    <h3><a href="#manage_dependency">Manage Dependencies</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#examples">Working Examples</a></h3>
+                    <h3><a href="#npm_scripts">NPM Scripts for Automation</a></h3>
                 </div>
-                <!-- <div class="toc_content">
-                    <h3><a href="#github_pages">///</a></h3>
-                </div> -->
+                <div class="toc_content">
+                    <h3><a href="#host_react">Publishing and Hosting a React Application</a></h3>
+                </div>
             </section>
         </section>
 
@@ -55,103 +54,43 @@
         <section class="scroll_col">
 
             <div class="wide_block">
-                <h1>What is NPM/React Hosting?</h1>
+                <h1>Introduction</h1>
                 <br>
+                <!-- need to rewrite this -->
                 <p>
-                    npm (Node Package Manager) is a widely-used package manager for JavaScript projects, particularly those based on Node.js. It allows developers to easily install, manage, and share JavaScript libraries and tools. npm provides access to a vast ecosystem of open-source packages, enabling developers to streamline their development process by integrating pre-built functionalities into their projects. On the other hand, React hosting refers to the process of deploying React.js applications onto web servers for internet accessibility. React.js, a popular JavaScript library for building user interfaces, is often used for creating dynamic and interactive web applications. React hosting involves optimizing the application for production, selecting a hosting provider (such as AWS, Netlify, or Vercel), deploying the application onto the provider's servers, and ensuring its smooth operation and performance over time. In essence, npm facilitates the management of dependencies and tools used in React.js development, while React hosting enables the deployment and accessibility of React.js applications on the web.
+                    Now that you have an understanding of what NPM and React hosting are, why they are important, and 
+                    how they integrate into the MERN stack, you can begin installing, updating, and removing packages. 
+                    The steps below are to guide you in familiarizing yourself with the procedures. 
                 </p>
             </div>
-            <!-- understanding Git -->
-            <section class="topic_container" id="understanding_npm">
+
+            <!-- understanding npm -->
+            <section class="topic_container" id="understand_npm">
                 <div class="topic_head">
-                    <h2> Understanding <span class="git_color">NPM</span></h2>
+                    <h1>Understanding NPM</h1>
                 </div>
                 <div class="topic_body">
-                    <h3>What is it?</h3>
-                    <br>
-                    <p>
-                        Makes it easier for JS devs to share code they've created to solve problems and other devs to use in their own applications. NPM makes it easy to see changes and updates.
-                        AKA reuse code from other devs and a way to share your own code and manage different versions of code.
-
-                    </p>
-                </div>
-
-            </section>
-
-            <!-- understanding VS code -->
-            <section class="topic_container" id="understanding_hosting">
-                <div class="topic_head">
-                    <h2>Understanding <span class="vs_color">React Hosting</span></h2>
-                </div>
-                <div class="topic_body">
-                    <h3>What is it?</h3>
-                    <br>
-                    <p>
-                        "React hosting" is the essential process of taking a React.js application—a JavaScript library highly favored for building dynamic and interactive user interfaces—and making it accessible over the internet by deploying it onto web servers provided by hosting services. This process involves several key steps. Initially, developers craft their application using React.js, leveraging its component-based architecture to structure their user interface and manage application state efficiently. Once the application is developed, it undergoes optimization for production, which entails tasks such as minimizing file sizes, bundling JavaScript files, and removing development-specific code to enhance performance and load times. Following optimization, developers must select a hosting provider from a range of options available, such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Heroku, Netlify, Vercel, or GitHub Pages. Each hosting provider offers different features, scalability options, and pricing models, so the choice depends on the specific requirements of the project. Once a hosting provider is chosen, the deployment process begins. This typically involves uploading the optimized build files to the hosting provider's servers and configuring settings such as domain names, SSL certificates, and server configurations to ensure smooth operation of the application. After deployment, developers must monitor the application's performance, handling any issues that may arise, and scaling hosting resources as needed to accommodate increasing traffic and usage. Through React hosting, developers can bring their React.js applications to life on the web, enabling users worldwide to access and interact with their creations seamlessly.
-                    </p>
-                </div>
-
-            </section>
-
-            <div class="wide_block">
-              
-        
-            <!-- cloning repository in vs -->
-            <section class="topic_container" id="significance">
-
-                <div class="topic_head">
-                    <h2>What is the significance of <span class="vs_color">NPM</span></h2>
-                </div>
-
-                <div class="topic_body">
-                    <h3>Importance of NPM?</h3>
-                    <br>
-                    <p>
-                        NPM (Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node. js. NPM allows you to install and manage packages, or collections of code written by other developers, that can be easily reused in your own project.
-                    </p>
-                    <br>
-                    <div class="callout">
-                        <span class="emoji">&#x1F3C1;</span>
-                        <!-- <p>To start using VS Code and Git together, create a new repository in Github, then publish it. Afterwards, you can clone it in VS Code.</p> -->
+                    <div class="topic_subHead">
+                        <h2>What is NPM?</h2>
+                        <p>
+                            Makes it easier for JS devs to share code they've created to solve problems and other devs to use in their own applications. NPM makes it easy to see changes and updates.
+                            AKA reuse code from other devs and a way to share your own code and manage different versions of code.
+                        </p>
                     </div>
-                    <br>
-                    <!-- <h3>How to clone a repsository in <span class="vs_color">VS Code</span></h3> -->
-                    <div class="instructions">
-                        <ol class="numbered_steps">
-                            <!-- <li>Get the URL for the repository from Github.</li> -->
-                            <!-- <li> -->
-                                <!-- Open VS Code and select "clone git repository" from the welcom screen. -->
-                                <!-- If you are already working in VS, you can go to the 'source control' panel and open more options to select "clone". -->
-                            <!-- </li> -->
-                            <!-- <li> -->
-                                <!-- Enter the URL for your remote repository and proceed. This will create a copy of the repository on your local system. -->
-                            <!-- </li> -->
-                        </ol>
+                    <div class="topic_subHead">
+                        <h2>What is the Signficance of NPM?</h2>
+                        <p>
+                            NPM (Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node. js. NPM allows you to install and manage packages, or collections of code written by other developers, that can be easily reused in your own project.
+                        </p>
                     </div>
-                    <div class="callout">
-                        <div class="emoji">&#128161;</div>
-                        <!-- <div><p>It will prompt you to set up a working directory for your repository. You should make a path that is intuitive to the project you are working on.</p></div> -->
+                    <div class="topic_subHead">
+                        <h2>How Does NPM work with MERN?</h2>
+                        <p>
+                            It manages packages which are part of MERN such as node.js. It installs and manages these parts of MERN for other devs to collaborate. 
+                            Here is a list of steps to integrate NPM : <br>
+                            <a href = "https://www.uxpin.com/docs/merge/npm-integration/#step-1-add-a-library-using-npm-integration" target="_blank">NPM integration</a>
+                        </p>
                     </div>
-                </div>
-
-            </section>
-
-            <!-- Branching with vs -->
-            <section class="topic_container" id="mern_int">
-                <div class="topic_head">
-                    <h2>MERN integration</h2>
-                </div>
-                <div class="topic_body">
-                    <h3>How does NPM work with MERN?</h3>
-                    <br>
-                    <p>
-                        It manages packages which are part of MERN such as node.js. It installs and manages these parts of MERN for other devs to collaborate. 
-                        Here is a list of steps to integrate NPM : <br>
-                         <a href = "https://www.uxpin.com/docs/merge/npm-integration/#step-1-add-a-library-using-npm-integration">NPM integration</a>
-                    </p>
-                    <br>
-                   
-                    <br>
                     <div class="callout">
                         <span class="emoji">&#128273;</span>
                         <div>
@@ -163,168 +102,340 @@
                             </p>
                         </div>
                     </div>
-                    <br>
-                    <h3>Creating branches in <span class="vs_color">VS Code</span></h3>
-                    <br>
-                    <p>
-                        Creating branches in VS can be done easily by accessing the command panel &lpar;comman+shift+p&rpar;.
-                    </p>
-                    <br>
-                    <!-- <p>From here, choose which option suits your needs:</p> -->
-                    <div class="instructions">
-                        <ol class="numbered_steps" type="a">
-                            <!-- <li>Create new Branch</li> -->
-                            <!-- <li>Create new Branch from...</li> -->
-                           <!--  -->
-                            <!-- <li>Create new Branch &lpar;detached&rpar;</li> -->
-                        </ol>
-                    </div>
-                    <p>
-                        <!-- Once you have your branch created, you can commit changes (sync changes) to update the remote repository, or you can keep the branch local. -->
-                    </p>
-                    <div class="callout">
-                        <span class="emoji">&#128161;</span>
-                        <div>
-                            <p>
-                                <!-- If you want to learn more about 'detached' branches, -->
-                            </p>
-                            <p>
-                                <!-- look <a href="https://www.cloudbees.com/blog/git-detached-head">here</a> -->
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
-
-            <!-- committing changes to a file -->
-            <section class="topic_container" id="common_config">
+            <!-- understanding react hosting -->
+            <section class="topic_container" id="understand_react">
                 <div class="topic_head">
-                    <!-- <h2>Commit changes to File&lpar;s&rpar;</h2> -->
-                </div>
-                <div class="topic_body">
-                    <!-- consider taking htis out of a callout -->
-                    <div class="callout">
-                        <span class="emoji">&#128680;</span>
-                        <div>
-                            <p>
-                                <!-- You have to make sure git is configured on your local repository first. This only needs to be done once for each cloned repository. -->
-                            </p>
-                            <div class="instructions">
-                                <ol class="numbered_steps">
-                                    <!-- <li>Open the terminal in VS Code</li> -->
-                                    <!-- <li>Using your Github username and email, in terminal:</li> -->
-                                    <!-- fix styling for lists in callouts -->
-                                    <div class="instructions">
-                                        <ol type="a" class="numbered_steps">
-                                            <!-- <li>Enter <span class="green_type">git config user.name "[your username]"</span></li> -->
-                                            <!-- <li>Enter <span class="green_type">git config user.email "[your email]"</span></li> -->
-                                        </ol>
-
-                                    </div>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <h3>What are Commits?</h3> -->
-                    <br>
-                    <p>
-                        <!-- Think of a commit on GitHub as a bookmark in a notebook. When you make changes to your project 
-                        &lpar;like writing or editing pages in the notebook&rpar;, a commit marks exactly what changes you made at that moment. 
-                        It's like saying, "Here's what I added or changed on this page today." This bookmark helps you and others see 
-                        the history of changes made over time. It's a way of keeping track of all the small or big updates you make, 
-                        like a diary entry for your project, making it easy to understand how the project has evolved. -->
-                    </p>
-                    <br>
-                    <!-- <h3>How to Commit in <span class="vs_color">VS Code</span></h3> -->
-                    <div class="instructions">
-                        <ol class="numbered_steps">
-                            <!-- <li>Create whatever files or changes to a file that you want.</li>
-                            <li>Hit “stage changes” while you hover over the file tab &lpar;its the plus sign&rpar;</li>
-                            <li>Add a brief message explaining what your changes were, then hit “commit”</li> -->
-                        </ol>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- pushing changes to remote repository from vs -->
-            <section class="topic_container" id="common_func">
-                <div class="topic_head">
-                    <!-- <h2>Push Changes to Remote Repository, <span class="gh_color">Github</span></h2> -->
-                </div>
-                <div class="topic_body">
-                    <!-- <h3>What is a Push?</h3> -->
-                    <br>
-                    <p>
-                        1. Purpose: npm can manage dependencies. npm can (in one command line) install all the dependencies of a project.
-                        <br><br>
-                        2: Description: NPM or Node Package Manager is a command line utility which makes it easier to manage external libraries used for your program.
-                    </p>
-                    <br>
-                    
-                    <br>
-                    <!-- <h3>How to Push Changes in <span class="vs_color">VS Code</span></h3> -->
-                    <br>
-                    <div class="instrcutions">
-                        <ol class="numbered_steps">
-                            <!-- <li>Navigate to "source control" while in VS Code</li> -->
-                            <!-- <li>Hit "sync changes"</li> -->
-                        </ol>
-                    </div>
-                    <div class="callout">
-                        <span class="emoji">&#128161;</span>
-                        <p>
-                           <!-- Using “sync changes” will both pull and push from the remote repository.  This is an easy way to keep your local repository current with the project. If you do not want to use this method, you can also use the ellipses in the side panel of the “source control” menu. This opens a list of options (push, pull, clone, fetch) to choose from. -->
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            
-            <!-- pull requests -->
-            <section class="topic_container" id="examples">
-                <div class="topic_head">
-                    <!-- <h2>Pull Requests</h2> -->
-                </div>
-                <div class="topic_body">
-                    <!-- <h3>My thoughts on Pull Requests</h3> -->
-                    <br>
-                    <p>
-                        <!-- A pull request on GitHub is like putting a suggestion box in a community center. Imagine you've made some great changes or improvements to a project 
-                        you found at the center &lpar;like a shared recipe book&rpar;. Instead of just replacing the original, you put your suggestions &lpar;your updated pages&rpar; in the 
-                        suggestion box. This is your pull request. It's a way of saying, "Hey, I made some changes I think are good, can we add them to the original project?" 
-                        The community &lpar;or project owners&rpar; can then review your suggestions, discuss them, and decide whether to incorporate them into the main project. It's a 
-                        collaborative and respectful way of contributing improvements to a shared project. -->
-                    </p>
-                    <br>
-                    <div class="callout">
-                        <span class="emoji">&#128161;</span>
-                        <!-- <p>To create pull requests in VS Code, you need to install the extension <span class="green_type">GitHub Pull Requests and Issues</span>.</p> -->
-                    </div>
-                    <br>
-                    <!-- <iframe src="https://www.youtube.com/embed/For9VtrQx58?si=MDGapKy-uK6dCo6W"></iframe> -->
-                </div>
-            </section>
-
-            <section class="topic_container" id="react_path">
-                <div class="topic_head">
-                    <h1>Hosting React Applications</h1>
+                    <h1>Understanding React App Hosting</h1>
                 </div>
                 <div class="topic_body">
                     <div class="topic_subHead">
-                        <h2>Publishing Path for a React Application</h2>
+                        <h2>What is React?</h2>
+                        <p>
+                            "React hosting" is the essential process of taking a React.js application—a JavaScript library highly favored for building dynamic and interactive user interfaces—and making it accessible over the internet by deploying it onto web servers provided by hosting services. This process involves several key steps. Initially, developers craft their application using React.js, leveraging its component-based architecture to structure their user interface and manage application state efficiently. Once the application is developed, it undergoes optimization for production, which entails tasks such as minimizing file sizes, bundling JavaScript files, and removing development-specific code to enhance performance and load times. Following optimization, developers must select a hosting provider from a range of options available, such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Heroku, Netlify, Vercel, or GitHub Pages. Each hosting provider offers different features, scalability options, and pricing models, so the choice depends on the specific requirements of the project. Once a hosting provider is chosen, the deployment process begins. This typically involves uploading the optimized build files to the hosting provider's servers and configuring settings such as domain names, SSL certificates, and server configurations to ensure smooth operation of the application. After deployment, developers must monitor the application's performance, handling any issues that may arise, and scaling hosting resources as needed to accommodate increasing traffic and usage. Through React hosting, developers can bring their React.js applications to life on the web, enabling users worldwide to access and interact with their creations seamlessly.
+                        </p>
+                    </div>
+                    <!-- <div class="topic_subHead">
+                        <h2>What is the Signficance of React?</h2>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- Getting started with NPM -->
+            <section class="topic_container" id="getting_started">
+                <div class="topic_head">
+                    <h1>Getting Started with NPM</h1>
+                </div>
+                <div class="topic_body">
+                    <p>
+                        To get started with NPM, <a href ="https://www.npmjs.com/signup" target="_blank">create an account</a>. 
+                        After you set up an NPM account, use the Command Line Interface (CLI) to install NPM.
+                        <br><br>
+                        Run the following command to download the latest version: <code>npm install -g npm</code>
+                        <br><br> 
+                        You can check your version of Node.js and NPM by typing in the commands:
+                        <ul id="bulletlist">
+                            <code>
+                            <li>node -v</li> 
+                            <li>npm -v</li>
+                            </code>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Create and Manage a package.json File -->
+            <section class="topic_container" id="manage_json">
+                <div class="topic_head">
+                    <h1>Create and Manage a <span class="green_type">package.json</span> File</h1>
+                </div>
+                <div class="topic_body">
+
+                    <p>
+                        This section provides information about what you need and why before you can begin installing
+                        NPM. 
+                    </p>
+                    <div class="topic_subHead">
+                        <h2>What You Need</h2>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis voluptas sunt unde quidem cupiditate 
-                        dolorum similique voluptatibus. Repellat, molestias dolore sunt a eveniet eaque doloribus sed est aperiam 
-                        temporibus.
+                        To create a package.json file, there are a few things you need to install.
                     </p>
+                    <ul id="bulletlist">
+                        <li>A Node version manager</li> 
+                        <li>Node.js</li>
+                        <li>NPM</li>
+                    </ul>
+
+                    <div class="topic_subHead">
+                        <h2>Why You Need It</h2>
+                    </div>
+                    <p>
+                        Together, NPM is installed with Node.js, which means you have to install Node.js to get NPM 
+                        installed on your computer. Node version managers allow you to install and switch between 
+                        multiple versions of Node.js and NPM on your system. Before installing Node.js and NPM, 
+                        you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm" target="_blank">nvm</a>.
+                        You can download Node.js from the official web site <a href ="https://nodejs.org" target="_blank">https://nodejs.org</a>, 
+                        which also has instructions to run the install.
+                    </p>
+                </div>
+            </section>
+
+            <!-- install, update, remove packages-->
+            <section class="topic_container" id="manage_packages">
+                <div class="topic_head">
+                    <h1>Install, Update, and Remove Packages</h1>
+                </div>
+                <div class="topic_body">
+
+                    <!-- can probably make this a callout -->
+                    <p>
+                        The purpose here is to provide guidance about NPM packages. 
+                    </p>
+
+                    <div class="topic_subHead">
+                        <h2>Install an NPM Package</h2>
+                    </div>
+                    <ol>
+                        <li>If you have not already, <a href ="https://www.npmjs.com/" target="_blank">create an npm account</a>.</li>
+                        <li>Search for specific packages in the top search bar. Also in the center you can click 
+                            on one of the categories below Popular libraries or Discover packages.</li>
+                        <li>After you have clicked on the package you want, copy the package name on the far right of the page under Install.</li>
+                        <li>Navigate to the command line and type <code>npm install [package_name]. </code></li>
+                        <li>If you are installing a scoped package, reference the scope name during installation. (ex. npm install [@scope/package-name]).</li>
+                    </ol>
+
+                    <div class="topic_subHead">
+                        <h2>Update an NPM Package</h2>
+                    </div>
+                    <p>
+                        You can <a href="https://docs.npmjs.com/updating-packages-downloaded-from-the-registry" target="_blank">follow the steps</a> on the NPM website to update your package.
+                    </p>
+
+                    <div class="topic_subHead">
+                        <h2>Remove an NPM Package</h2>
+                    </div>
+                    <p>
+                        You can <a href="https://docs.npmjs.com/uninstalling-packages-and-dependencies" target="_blank">follow the steps</a> on the NPM website to remove your package.
+                    </p>
+
+                </div>
+            </section>
+
+            <!-- managing dependency -->
+            <section class="topic_container" id="manage_dependency">
+
+                <div class="topic_head">
+                    <h1>Managing a Dependency</h1>
+                </div>
+                <div class="topic_body">
+                    <p> 
+                        A dependency is a relationship between two pieces of software where one piece of software relies on the other to function properly. 
+                        Use dependencies to define the external packages or modules that your project needs to run properly. These external packages can 
+                        be libraries, frameworks, tools, or any other module that your code relies on to function correctly. 
+                    </p>
+                    <br>
+                    <p>
+                        In the package.json file, dependencies consist of all the packages used in the project with the version number. By specifying 
+                        these dependencies in the package.json file, you can ensure that anyone who downloads or clones your project has all the 
+                        necessary packages and dependencies installed. When you uninstall an NPM package, you also remove the package from the dependencies
+                    </p>
+                </div>
+    
+            </section>
+
+            <!-- npm scripts for automation -->
+
+            <section class="topic_container" id="npm_scripts">
+
+                <div class="topic_head">
+                    <h1>NPM Scripts for Automation</h1>
+                </div>
+                <div class="topic_body">
+                    <div class="callout">
+                        <span class="emoji">&#128273;</span>
+                        <div>
+                            <p>
+                                For more in-depth information on NPM scripts, 
+                            </p>
+                            <p>
+                                look <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches" target="_blank">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        NPM scripts are commands that can be run in the terminal to initiate an action. Defining these terminal commands in your package.json 
+                        file can help automate the process. This is done by making a field called “scripts” and adding entries that detail the command name and 
+                        subsequent action to be performed. Development tasks are often repetitive, so being able to duplicate them across projects or be cloned 
+                        by other developers is important. The “introduction to npm scripts” article published by GeeksforGeeks explains that “NPM scripts are 
+                        used to automate tasks like minifying CSS, uglifying JavaScript, building project. 
+                    </p>
+                    <br>
+                    <p>
+                        NPM scripts are versatile and simple and by learning fewer tools, we can automate tasks in our web project.” When writing your entries 
+                        in the scripts field, its best to stick to traditional terms for commands that perform universal actions. By this we mean tasks that are 
+                        routine and standardized. Its import to use commonly recognized terms because other developers kind use them more intuitively; additionally, 
+                        devOps and instrumentation tools are better utilized with consistent script names. Note: If you make a default package.json file, then the 
+                        scripts field will be automatically populated with the necessary scripts needed, but you will need to adjust the details of their actions for your project.
+                    </p>
+                    
+                    <div class="topic_subHead">
+                        <h2>Common Scripts Names</h2>
+                    </div>
+                    <p>
+                        These are some of the common script names to keep as default.
+                    </p>
+                    <br>
+                    <p class="green_type">
+                                “start” : “node [directing path to app]”,<br>
+                                “test”: “jest”, <br>
+                                “build”: “tsc”,<br>
+                                “lint”: “lint” <br>
+                    </p>
+                    <br>
+                    <p>
+                        Running your scripts is done through the terminal, and can be done by entering
+                    </p>
+                    <br>
+                    <p>
+                        <span class="green_type">npm run [script name]</span> 
+                    </p>
+                    <br>
+                    <p>
+                        You can run commands for testing, launching, or displaying content but can also nest commands within each other. 
+                        For example, the following entry defines the ‘start’ command as another command to run “lite”.
+                    </p>
+                    <br>
+                    <p class="green_type">
+                            “scripts”:<br>
+                                “start”: “npm run lite”,<br>
+                                “lite”: “lite-server”<br>   
+                    </p>
+                    <br>
+                    <p>
+                        So you could run the command “lite” by entering “npm start” in the terminal.
+
+                    </p>
+
+                    <div class="callout">
+                        <span class="emoji">&#128273;</span>
+                        <div>
+                            <p>
+                                To look at what types of tasks can be automated,
+                            </p>
+                            <p>
+                                look <a href="https://www.geeksforgeeks.org/introduction-to-npm-scripts/" target="_blank">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </section>
+
+            <!-- publish / host react application -->
+            <section class="topic_container" id="host_react">
+                <div class="topic_head">
+                    <h1>Publishing and Hosting a React Application</h1>
+                </div>
+                <div class="topic_container">
+                    <p>
+                        Publishing a React project is not different from regular projects in terms of fundamentals, but there are key differences in
+                        how you prepare and doploy the application.
+                    </p>
+                    <ul class="funky_list">
+                        <li>
+                            <span class="list_headings">Build Process</span><br>
+                             React applications typically require a build step before deployment. This involves transpiling JSX, bundling JavaScript files, optimizing assets, and generating static HTML files. Regular hosting may not require such a build process if you're deploying simple HTML, CSS, and JavaScript files.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="list_headings">Routing</span><br>
+                            React applications often use client-side routing libraries like React Router, which rely on browser history APIs and require special server configurations to handle routes correctly. Regular hosting may not support client-side routing out of the box and may require additional server-side configurations to ensure proper routing.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="list_headings">Asset Handling</span><br>
+                            React applications generate optimized asset files (such as JavaScript bundles, CSS files, and image assets) during the build process. Hosting platforms for React applications should be capable of serving these optimized assets efficiently, often leveraging Content Delivery Networks (CDNs) for fast content delivery.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="list_headings">Server-Side Rendering (SSR)</span><br>
+                            React applications can benefit from server-side rendering for improved SEO, performance, and initial page load times. Hosting platforms for React may offer specific support or optimizations for server-side rendering, whereas regular hosting may not provide such features out of the box.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="list_headings">Environment Variables</span><br>
+                            React applications often use environment variables for configuration (e.g., API keys, server URLs). Hosting platforms for React should provide ways to securely manage and inject environment variables into the application during the build or deployment process.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="list_headings">Deployment Workflow</span><br>
+                            React hosting platforms often offer streamlined deployment workflows tailored to React applications, such as integration with version control systems (e.g., GitHub, GitLab) for automatic deployments, continuous integration/continuous deployment (CI/CD) pipelines, and one-click deployment options. Regular hosting may not provide these specialized deployment workflows for React applications.
+                        </li>
+                    </ul>
+                    <div class="topic_subHead">
+                        <h2>Deploying a React App</h2>
+                        <p>
+                            Deploying a React application involves preparing your application for production and then hosting it on a server or a cloud platform. Here's a step-by-step guide to deploying a React application:
+                        </p>
+                        <ul class="funky_list">
+                            <li>
+                                <span class="list_headings">Build Your Application</span><br>
+                                Before deploying, you need to build your React application for production. Run the following command in your project directory to create an optimized build: <br>
+                                <span class="green_type">npm run build</span>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="list_headings">Choose a Hosting Platform</span><br>
+                                <ul>
+                                    <li>
+                                        <strong>Static File Hosting:</strong> Services like Netlify, Vercel, GitHub Pages, and Surge provide easy hosting solutions for static sites. They allow you to deploy your React application directly from your Git repository.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Cloud Platforms:</strong> Platforms like AWS, Google Cloud Platform, and Microsoft Azure offer various services for hosting web applications. You can deploy your React application to services like AWS S3, Google Cloud Storage, or Azure Blob Storage.
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="list_headings">Prepare your Deployment for Configuration</span><br>
+                                <ul>
+                                    <li>
+                                        <strong>Environment Variables:</strong> If your application uses environment variables, make sure to configure them for your production environment. Some hosting platforms allow you to set environment variables through their dashboard or configuration files.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Routing:</strong> If your React application uses client-side routing (e.g., React Router), ensure that your hosting platform is configured to handle URL rewrites correctly. This is necessary to ensure that client-side routes work as expected.
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="list_headings">Deploy your Application</span>
+                                <ul>
+                                    <li>
+                                        <strong>Static File Hosting:</strong> If you're using a static file hosting service, you can often deploy your application directly from your Git repository. Connect your repository to the hosting platform and configure the deployment settings. When you push changes to your repository, the hosting platform will automatically build and deploy your application.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Cloud Platforms:</strong> If you're using a cloud platform like AWS or Google Cloud Platform, you'll need to upload your build artifacts to the appropriate storage service (e.g., AWS S3 bucket, Google Cloud Storage bucket). Use the platform's CLI tools or web interface to upload your files to the storage service.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="topic_subHead">
+                        <h2>Deploying a React App using GitHub Pages Tutorial</h2>
+                    </div>
+                    <br>
+                    <iframe src="https://www.youtube.com/embed/4G6O0BIoq6M?si=gupSdmGEnYJ3_VC3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </section>
 
         </section>
-
     </section>
     <script src="ourScript.js"></script>
 </body>

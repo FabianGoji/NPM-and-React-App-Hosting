@@ -70,6 +70,11 @@ h3{
     color: rgb(229, 229, 229);
 }
 
+.list_headings{
+    color: rgb(255, 36, 109);
+    font-size: 1.25em;
+}
+
 p{
     font-family: 'Geneva', sans-serif;
     font-size: 1.25em;
@@ -77,6 +82,15 @@ p{
     line-height: 1.5em;
     color:rgb(229, 229, 229);
 }
+li{
+    font-family: 'Geneva', sans-serif;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color:rgb(229, 229, 229);
+    margin-left: 40px;
+}
+
 
 /* ---------- Special characters & symbols -------- */
 hr{
@@ -216,6 +230,9 @@ hr{
         font-weight: 300;
         margin-left: 1vw;
     }
+    /* a:hover{
+        font-weight: 400;
+    } */
 }
 
 .site_description{
@@ -264,6 +281,14 @@ hr{
     padding: 0vh 1.5vw;
     margin: 1.5vh 0;
     /* align-self: flex-start; */
+}
+
+.topic_subHead{
+    margin: 25px 0px 5px 0px;
+    h2, h3{
+        color:  rgb(255, 36, 109);
+        font-weight: 400;
+    }
 }
 
 .topic_body{
@@ -316,6 +341,18 @@ hr{
         font-weight: 300;
         line-height: 1.75em;
         color: rgb(229, 229, 229);
+    }
+}
+
+.funky_list{
+    margin: 2vh auto;
+    list-style-type: none;
+    li{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .strong{
+        font-weight: 500;
     }
 }
 
