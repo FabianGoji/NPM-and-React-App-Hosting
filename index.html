@@ -56,11 +56,12 @@
             <div class="wide_block">
                 <h1>Introduction</h1>
                 <br>
-                <!-- need to rewrite this -->
                 <p>
-                    Now that you have an understanding of what NPM and React hosting are, why they are important, and 
-                    how they integrate into the MERN stack, you can begin installing, updating, and removing packages. 
-                    The steps below are to guide you in familiarizing yourself with the procedures. 
+                    This page introduces the basics of what Node Package Manager (NPM) and React hosting are, why 
+                    they are important, and how they integrate into the MongoDB, Express, React, Node (MERN) stack. 
+                    In understanding what NPM is, you can begin installing, updating, and removing packages. When 
+                    managing packages, you need to manage the dependencies associated with the packages. The 
+                    information below guides you in familiarizing yourself with the procedures. 
                 </p>
             </div>
 
@@ -73,32 +74,33 @@
                     <div class="topic_subHead">
                         <h2>What is NPM?</h2>
                         <p>
-                            Makes it easier for JS devs to share code they've created to solve problems and other devs to use in their own applications. NPM makes it easy to see changes and updates.
-                            AKA reuse code from other devs and a way to share your own code and manage different versions of code.
+                            NPM makes it easier for JavaScript developers (devs) to share code they've created and 
+                            for other devs to use in their own applications. With NPM, it is also easier to see any 
+                            changes and updates that have been made. You can reuse code from other devs and share 
+                            your own code while managing the different versions.
                         </p>
                     </div>
                     <div class="topic_subHead">
                         <h2>What is the Signficance of NPM?</h2>
                         <p>
-                            NPM (Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node. js. NPM allows you to install and manage packages, or collections of code written by other developers, that can be easily reused in your own project.
+                            As the name states, NPM serves as a package manager for the programming language JavaScript, and 
+                            is the default package manager for Node.js. NPM allows you to install and manage packages, or 
+                            collections of code written by other devs, that you can easily reuse in your own projects.
                         </p>
                     </div>
                     <div class="topic_subHead">
                         <h2>How Does NPM work with MERN?</h2>
                         <p>
-                            It manages packages which are part of MERN such as node.js. It installs and manages these parts of MERN for other devs to collaborate. 
-                            Here is a list of steps to integrate NPM : <br>
-                            <a href = "https://www.uxpin.com/docs/merge/npm-integration/#step-1-add-a-library-using-npm-integration" target="_blank">NPM integration</a>
+                            You can use NPM to manage the packages in the MERN stack so you can better collaborate and share. 
+                            Click the <a href = "https://www.uxpin.com/docs/merge/npm-integration/#step-1-add-a-library-using-npm-integration" target="_blank">UXPin</a> 
+                            link to follow the steps to integrate NPM into the MERN stack. <br>
                         </p>
                     </div>
                     <div class="callout">
                         <span class="emoji">&#128273;</span>
                         <div>
                             <p>
-                                For more in-depth information on MERN, 
-                            </p>
-                            <p>
-                                look <a href="https://www.mongodb.com/mern-stack">here</a>
+                                For more in-depth information about MERN, click <a href="https://www.mongodb.com/mern-stack">here</a>
                             </p>
                         </div>
                     </div>
@@ -114,15 +116,29 @@
                         <h2>What is React?</h2>
                         <p>
                             <!-- Updated the paragraph -->
-                            React, a JavaScript library is used to create user interfaces particularly for web applications. Developed by Facebook, React helps in efficiently updating and rendering components in response to changing data making it the best for creating interactive and dynamic UIs. <br><br>
+                            React, a JavaScript library, is used to create user interfaces particularly for web applications. 
+                            Developed by Facebook, React helps in efficiently updating and rendering components in response to 
+                            changing data, making it the best for creating interactive and dynamic User Interfaces (UIs). <br><br>
 
-                            The component based architecture of React allows developers to build encapsulated UI elements that can be composed together to form complex interfaces is one of its key features. Additionally, React uses a virtual DOM (Document Object Model) for efficient rendering rather than directly manipulating the real DOM which can consume many resources. <br><br>
+                            One of the key features of React is its component-based architecture, which allows you to build 
+                            encapsulated UI elements to integrate and form complex interfaces. Additionally, React uses a virtual 
+                            Document Object Model (DOM) for efficient rendering, rather than directly manipulating the real DOM, 
+                            which can consume many resources. <br><br>
                             
-                            React encourages declarative programming; here, developers state how the UI should look based on the application’s state rather than stating steps for updating the UI. This makes code easier to understand, maintain and debug.
+                            React encourages declarative programming, which means you can write to declare how the UI should look 
+                            based on the application's state, rather than writing actual steps for updating the UI. Declarative 
+                            programming makes code easier to understand, maintain, and debug.<br><br>
                             
-                            React also has an extensive ecosystem of supporting tools and libraries such as React Router which is used for navigation management, Redux which maintains application state and React Native that is used in building mobile apps using react syntax.
-                            
-                            Overall, with its speediness flexibility and friendliness among developers; react has become one of the most popular web app development tools in modern times.
+                            React also has an extensive ecosystem of supporting tools and libraries: 
+                            <ul id="bulletlist">
+                                <li>React Router is used for navigation management</li> 
+                                <li>Redux maintains application state</li>
+                                <li>React Native is used in building mobile apps using react syntax</li>
+                            </ul> 
+                            </p><br><br>
+                        <p>
+                            With its speediness, flexibility, and friendliness among developers, react has become one of the 
+                            most popular web application development tools in modern times.
                         </p>
                     </div>
                     <!-- <div class="topic_subHead">
@@ -141,15 +157,11 @@
                         To get started with NPM, <a href ="https://www.npmjs.com/signup" target="_blank">create an account</a>. 
                         After you set up an NPM account, use the Command Line Interface (CLI) to install NPM.
                         <br><br>
-                        Run the following command to download the latest version: <code>npm install -g npm</code>
+                        Run the following command to download the latest version: <code><span class="green_type">npm install -g npm</span></code>
                         <br><br> 
-                        You can check your version of Node.js and NPM by typing in the commands:
-                        <ul id="bulletlist">
-                            <code>
-                            <li>node -v</li> 
-                            <li>npm -v</li>
-                            </code>
-                        </ul>
+                        You can check your version of Node.js and NPM by typing in the commands:<br>
+                            <code><span class="green_type">node -v</span></code><br> 
+                            <code><span class="green_type">npm -v</span></code>
                     </p>
                 </div>
             </section>
@@ -160,11 +172,6 @@
                     <h1>Create and Manage a <span class="green_type">package.json</span> File</h1>
                 </div>
                 <div class="topic_body">
-
-                    <p>
-                        This section provides information about what you need and why before you can begin installing
-                        NPM. 
-                    </p>
                     <div class="topic_subHead">
                         <h2>What You Need</h2>
                     </div>
@@ -197,12 +204,6 @@
                     <h1>Install, Update, and Remove Packages</h1>
                 </div>
                 <div class="topic_body">
-
-                    <!-- can probably make this a callout -->
-                    <p>
-                        The purpose here is to provide guidance about NPM packages. 
-                    </p>
-
                     <div class="topic_subHead">
                         <h2>Install an NPM Package</h2>
                     </div>
@@ -211,8 +212,8 @@
                         <li>Search for specific packages in the top search bar. Also in the center you can click 
                             on one of the categories below Popular libraries or Discover packages.</li>
                         <li>After you have clicked on the package you want, copy the package name on the far right of the page under Install.</li>
-                        <li>Navigate to the command line and type <code>npm install [package_name]. </code></li>
-                        <li>If you are installing a scoped package, reference the scope name during installation. (ex. npm install [@scope/package-name]).</li>
+                        <li>Navigate to the command line and type <code><span class="green_type">npm install [package_name]</span></code>.</li>
+                        <li>If you are installing a scoped package, reference the scope name during installation. (ex. <code><span class="green_type">npm install [@scope/package-name]</span></code>).</li>
                     </ol>
 
                     <div class="topic_subHead">
@@ -267,9 +268,7 @@
                         <div>
                             <p>
                                 For more in-depth information on NPM scripts, 
-                            </p>
-                            <p>
-                                look <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches" target="_blank">here</a>
+                                click <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches" target="_blank">here</a>
                             </p>
                         </div>
                     </div>
@@ -290,7 +289,7 @@
                     </p>
                     
                     <div class="topic_subHead">
-                        <h2>Common Scripts Names</h2>
+                        <h2>Common Script Names</h2>
                     </div>
                     <p>
                         These are some of the common script names to keep as default.
@@ -304,11 +303,11 @@
                     </p>
                     <br>
                     <p>
-                        Running your scripts is done through the terminal, and can be done by entering
+                        Running your script is done through the terminal and can be done by typing the following:
                     </p>
                     <br>
                     <p>
-                        <span class="green_type">npm run [script name]</span> 
+                        <code><span class="green_type">npm run [script name]</span></code>
                     </p>
                     <br>
                     <p>
@@ -323,7 +322,7 @@
                     </p>
                     <br>
                     <p>
-                        So you could run the command “lite” by entering “npm start” in the terminal.
+                        You can run the command "lite" by typing <code><span class="green_type">npm start</span></code> in the terminal.
 
                     </p>
 
@@ -331,10 +330,8 @@
                         <span class="emoji">&#128273;</span>
                         <div>
                             <p>
-                                To look at what types of tasks can be automated,
-                            </p>
-                            <p>
-                                look <a href="https://www.geeksforgeeks.org/introduction-to-npm-scripts/" target="_blank">here</a>
+                                To find out about the types of tasks you can automate,
+                                click <a href="https://www.geeksforgeeks.org/introduction-to-npm-scripts/" target="_blank">here</a>
                             </p>
                         </div>
                     </div>
@@ -351,7 +348,7 @@
                 <div class="topic_container">
                     <p>
                         Publishing a React project is not different from regular projects in terms of fundamentals, but there are key differences in
-                        how you prepare and doploy the application.
+                        how you prepare and deploy the application.
                     </p>
                     <ul class="funky_list">
                         <li>
@@ -388,20 +385,24 @@
                     <div class="topic_subHead">
                         <h2>Deploying a React App</h2>
                         <p>
-                            Deploying a React app involves making it accessible on the internet for users to interact with. This process typically includes steps like preparing the app for production, selecting a hosting provider, uploading the app files to the server, configuring domain and SSL settings, and ensuring ongoing monitoring and maintenance. Deploying ensures that your React app is live and available for use by your intended audience. <br>
+                            Deploying a React app involves making it accessible on the internet for users to interact with. This process 
+                            typically includes steps like preparing the app for production, selecting a hosting provider, uploading the 
+                            app files to the server, configuring domain and SSL settings, and ensuring ongoing monitoring and maintenance. 
+                            Deploying ensures that your React app is live and available for use by your intended audience. <br>
                             <br>
-1. Build: Prepare your React app for production. <br>
-2. Choose Hosting: Select a provider like Netlify or AWS. <br>
-3. Deploy: Push your app to the chosen host. <br>
-4. Domain & SSL: Set up a custom domain and secure it with SSL.<br>
-5. Continuous Deployment: Automate updates with continuous deployment.<br>
-
+                            <ol>
+                                <li>Build: Prepare your React app for production.</li>
+                                <li>Choose Hosting: Select a provider like Netlify or AWS.</li>
+                                <li>Deploy: Push your app to the chosen host.</li>
+                                <li>Domain & SSL: Set up a custom domain and secure it with SSL.</li>
+                                <li>5. Continuous Deployment: Automate updates with continuous deployment.</li>
+                            </ol><br>
                         </p>
                         <ul class="funky_list">
                             <li>
                                 <span class="list_headings">Build Your Application</span><br>
                                 Before deploying, you need to build your React application for production. Run the following command in your project directory to create an optimized build: <br>
-                                <span class="green_type">npm run build</span>
+                                <code><span class="green_type">npm run build</span></code>
                             </li>
                             <br>
                             <li>

@@ -381,3 +381,7 @@ iframe{
     color: rgb(166, 109, 251);
     font-weight: 600;
 }
+code{
+    background-color: rgb(69, 68, 68);
+    padding: 3px;
+}
