@@ -74,18 +74,18 @@
                     <div class="topic_subHead">
                         <h2>What is NPM?</h2>
                         <p>
-                            NPM makes it easier for JavaScript developers (devs) to share code they've created and 
-                            for other devs to use in their own applications. With NPM, it is also easier to see any 
-                            changes and updates that have been made. You can reuse code from other devs and share 
-                            your own code while managing the different versions.
+                            As the name states, NPM serves as a package manager for the programming language JavaScript, and 
+                            is the default package manager for Node.js. NPM allows you to install and manage packages, or 
+                            collections of code written by other devs, that you can easily reuse in your own projects.
                         </p>
                     </div>
                     <div class="topic_subHead">
                         <h2>What is the Signficance of NPM?</h2>
                         <p>
-                            As the name states, NPM serves as a package manager for the programming language JavaScript, and 
-                            is the default package manager for Node.js. NPM allows you to install and manage packages, or 
-                            collections of code written by other devs, that you can easily reuse in your own projects.
+                            NPM makes it easier for JavaScript developers (devs) to share code they've created and 
+                            for other devs to use in their own applications. With NPM, it is also easier to see any 
+                            changes and updates that have been made. You can reuse code from other devs and share 
+                            your own code while managing the different versions.
                         </p>
                     </div>
                     <div class="topic_subHead">
@@ -153,30 +153,11 @@
                     <h1>Getting Started with NPM</h1>
                 </div>
                 <div class="topic_body">
-                    <p>
-                        To get started with NPM, <a href ="https://www.npmjs.com/signup" target="_blank">create an account</a>. 
-                        After you set up an NPM account, use the Command Line Interface (CLI) to install NPM.
-                        <br><br>
-                        Run the following command to download the latest version: <code><span class="green_type">npm install -g npm</span></code>
-                        <br><br> 
-                        You can check your version of Node.js and NPM by typing in the commands:<br>
-                            <code><span class="green_type">node -v</span></code><br> 
-                            <code><span class="green_type">npm -v</span></code>
-                    </p>
-                </div>
-            </section>
-
-            <!-- Create and Manage a package.json File -->
-            <section class="topic_container" id="manage_json">
-                <div class="topic_head">
-                    <h1>Create and Manage a <span class="green_type">package.json</span> File</h1>
-                </div>
-                <div class="topic_body">
                     <div class="topic_subHead">
                         <h2>What You Need</h2>
                     </div>
                     <p>
-                        To create a package.json file, there are a few things you need to install.
+                        There are a few things you need to install NPM.
                     </p>
                     <ul id="bulletlist">
                         <li>A Node version manager</li> 
@@ -190,10 +171,60 @@
                     <p>
                         Together, NPM is installed with Node.js, which means you have to install Node.js to get NPM 
                         installed on your computer. Node version managers allow you to install and switch between 
-                        multiple versions of Node.js and NPM on your system. Before installing Node.js and NPM, 
-                        you should install a Node version manager. The standard is <a href ="https://github.com/creationix/nvm" target="_blank">nvm</a>.
-                        You can download Node.js from the official web site <a href ="https://nodejs.org" target="_blank">https://nodejs.org</a>, 
-                        which also has instructions to run the install.
+                        multiple versions of Node.js and NPM on your system. <br><br>
+                        
+                        Before installing Node.js and NPM, you should install a Node version manager. The standard is 
+                        <a href ="https://github.com/creationix/nvm" target="_blank">nvm</a>. <br><br>
+                    </p>
+                    <div class="topic_subHead">
+                        <h2>Install NPM</h2>
+                    </div>
+                    <p>
+                        To get started with NPM, <a href ="https://www.npmjs.com/signup" target="_blank">create an account</a>. 
+                        After you set up an NPM account, use the Command Line Interface (CLI) to install NPM.
+                        <br><br>
+                        Run the following command to download the latest version: <code><span class="green_type">npm install -g npm</span></code>
+                        <br><br> 
+                        You can check your version of Node.js and NPM by typing in the commands:<br>
+                            <code><span class="green_type">node -v</span></code><br> 
+                            <code><span class="green_type">npm -v</span></code>
+                        <br><br>
+                        You can also download Node.js separately from the <a href ="https://nodejs.org" target="_blank">official website</a>, 
+                        which has a package installation with nvm and NPM included.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Create and Manage a package.json File -->
+            <section class="topic_container" id="manage_json">
+                <div class="topic_head">
+                    <h1>Create and Manage a <span class="green_type">package.json</span> File</h1>
+                </div>
+                <div class="topic_body">
+                    <div class="topic_subHead">
+                        <h2>Questionnaire</h2>
+                    </div>
+                    <p>
+                        You can create a package.json file by running a CLI questionnaire. 
+                    </p><br>
+                        <ol>
+                            <li>On the command line, navigate to the root directory of your package.</li>
+                            <li>Run the following command:
+                                <code><span class="green_type">npm init</span></code>.</li>
+                            <li>Answer the questions in the command line questionnaire.</li>
+                        </ol>
+                    <div class="topic_subHead">
+                        <h2>Default</h2>
+                    </div>
+                    <p>
+                        You can also create a default package.json file.
+                    </p><br>
+                    <p>
+                        <ol>
+                            <li>On the command line, navigate to the root directory of your package.</li>
+                            <li>Run the following command: 
+                                <code><span class="green_type">npm init --yes</span></code>.</li>
+                        </ol>
                     </p>
                 </div>
             </section>
@@ -276,7 +307,7 @@
                         NPM scripts are commands that can be run in the terminal to initiate an action. Defining these terminal commands in your package.json 
                         file can help automate the process. This is done by making a field called “scripts” and adding entries that detail the command name and 
                         subsequent action to be performed. Development tasks are often repetitive, so being able to duplicate them across projects or be cloned 
-                        by other developers is important. The “introduction to npm scripts” article published by GeeksforGeeks explains that “NPM scripts are 
+                        by other developers is important. The <a href="https://www.geeksforgeeks.org/introduction-to-npm-scripts/">Introduction to NPM scripts</a> article published by GeeksforGeeks explains that “NPM scripts are 
                         used to automate tasks like minifying CSS, uglifying JavaScript, building project. 
                     </p>
                     <br>
@@ -284,10 +315,17 @@
                         NPM scripts are versatile and simple and by learning fewer tools, we can automate tasks in our web project.” When writing your entries 
                         in the scripts field, its best to stick to traditional terms for commands that perform universal actions. By this we mean tasks that are 
                         routine and standardized. Its import to use commonly recognized terms because other developers kind use them more intuitively; additionally, 
-                        devOps and instrumentation tools are better utilized with consistent script names. Note: If you make a default package.json file, then the 
-                        scripts field will be automatically populated with the necessary scripts needed, but you will need to adjust the details of their actions for your project.
+                        devOps and instrumentation tools are better utilized with consistent script names. 
                     </p>
-                    
+                        <div class="callout">
+                            <span class="emoji">&#128273;</span>
+                            <div>
+                                <p>
+                                    Note: If you create a default package.json file, the scripts field will automatically populate with the 
+                                    necessary scripts needed, but you will need to adjust the details of their actions for your project.
+                                </p>
+                            </div>
+                        </div>
                     <div class="topic_subHead">
                         <h2>Common Script Names</h2>
                     </div>
