@@ -27,9 +27,6 @@
                     <h3><a href="#understand_npm">Understanding NPM</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#understand_react">Understanding React Hosting</a></h3>
-                </div>
-                <div class="toc_content">
                     <h3><a href="#getting_started">Getting Started With NPM</a></h3>
                 </div>
                 <div class="toc_content">
@@ -45,7 +42,10 @@
                     <h3><a href="#npm_scripts">NPM Scripts for Automation</a></h3>
                 </div>
                 <div class="toc_content">
-                    <h3><a href="#host_react">Publishing and Hosting a React Application</a></h3>
+                    <h3><a href="#understand_react">Understanding React Hosting</a></h3>
+                </div>
+                <div class="toc_content">
+                    <h3><a href="#host_react">Publishing a React Application</a></h3>
                 </div>
             </section>
         </section>
@@ -104,46 +104,6 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- understanding react hosting -->
-            <section class="topic_container" id="understand_react">
-                <div class="topic_head">
-                    <h1>Understanding React App Hosting</h1>
-                </div>
-                <div class="topic_body">
-                    <div class="topic_subHead">
-                        <h2>What is React?</h2>
-                        <p>
-                            <!-- Updated the paragraph -->
-                            React, a JavaScript library, is used to create user interfaces particularly for web applications. 
-                            Developed by Facebook, React helps in efficiently updating and rendering components in response to 
-                            changing data, making it the best for creating interactive and dynamic User Interfaces (UIs). <br><br>
-
-                            One of the key features of React is its component-based architecture, which allows you to build 
-                            encapsulated UI elements to integrate and form complex interfaces. Additionally, React uses a virtual 
-                            Document Object Model (DOM) for efficient rendering, rather than directly manipulating the real DOM, 
-                            which can consume many resources. <br><br>
-                            
-                            React encourages declarative programming, which means you can write to declare how the UI should look 
-                            based on the application's state, rather than writing actual steps for updating the UI. Declarative 
-                            programming makes code easier to understand, maintain, and debug.<br><br>
-                            
-                            React also has an extensive ecosystem of supporting tools and libraries: 
-                            <ul id="bulletlist">
-                                <li>React Router is used for navigation management</li> 
-                                <li>Redux maintains application state</li>
-                                <li>React Native is used in building mobile apps using react syntax</li>
-                            </ul> 
-                            </p><br><br>
-                        <p>
-                            With its speediness, flexibility, and friendliness among developers, react has become one of the 
-                            most popular web application development tools in modern times.
-                        </p>
-                    </div>
-                    <!-- <div class="topic_subHead">
-                        <h2>What is the Signficance of React?</h2>
-                    </div> -->
                 </div>
             </section>
 
@@ -229,7 +189,7 @@
                     </p><br><br>
                     <p>
                         Below is what it should look like. <br><br>
-                        <img src="images/defaultPackage.png" width="450" height="450">
+                        <img src="images/defaultPackage.png" width="500" height="auto">
                     </p>
                 </div>
             </section>
@@ -287,6 +247,26 @@
                         these dependencies in the package.json file, you can ensure that anyone who downloads or clones your project has all the 
                         necessary packages and dependencies installed. When you uninstall an NPM package, you also remove the package from the dependencies
                     </p>
+                    <br>
+                     <div class="topic_subHead">
+                        <h2>Dev Dependencies</h2>
+                     </div>
+                     <p>
+                        In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project 
+                        in its development phase and not in the production or testing environment with its version number. So, whenever you want to install 
+                        any library that is required only in your development phase then you can find it in the dev Dependencies object. 
+                     </p>
+                     <br>
+                     <p>
+                        To install a dev dependency, you enter the following information into your terminal.
+                     </p>
+                     <p class="green_type">
+                        <code>
+                            npm install [package name] --save-dev
+                        </code>
+                     </p>
+                     <br>
+                     <img src="images/devDependicies screenshot.png" alt="screenshot of dev dependencies in packages field" width="500" height="auto">
                 </div>
     
             </section>
@@ -338,12 +318,15 @@
                         These are some of the common script names to keep as default.
                     </p>
                     <br>
-                    <p class="green_type">
-                                “start” : “node [directing path to app]”,<br>
-                                “test”: “jest”, <br>
-                                “build”: “tsc”,<br>
-                                “lint”: “lint” <br>
-                    </p>
+                        <p class="green_type">
+                            <code>
+                                    “start” : “node [directing path to app]”,
+                                    “test”: “jest”, 
+                                    “build”: “tsc”,
+                                    “lint”: “lint” 
+                                
+                            </code>
+                        </p>
                     <br>
                     <p>
                         Running your script is done through the terminal and can be done by typing the following:
@@ -359,9 +342,11 @@
                     </p>
                     <br>
                     <p class="green_type">
+                        <code>
                             “scripts”:<br>
                                 “start”: “npm run lite”,<br>
-                                “lite”: “lite-server”<br>   
+                                “lite”: “lite-server”<br>
+                        </code>   
                     </p>
                     <br>
                     <p>
@@ -383,10 +368,51 @@
     
             </section>
 
-            <!-- publish / host react application -->
+            <!-- understanding react hosting -->
+            <section class="topic_container" id="understand_react">
+                <div class="topic_head">
+                    <h1>Understanding React App Hosting</h1>
+                </div>
+                <div class="topic_body">
+                    <div class="topic_subHead">
+                        <h2>What is React?</h2>
+                        <p>
+                            <!-- Updated the paragraph -->
+                            React, a JavaScript library, is used to create user interfaces particularly for web applications. 
+                            Developed by Facebook, React helps in efficiently updating and rendering components in response to 
+                            changing data, making it the best for creating interactive and dynamic User Interfaces (UIs). <br><br>
+
+                            One of the key features of React is its component-based architecture, which allows you to build 
+                            encapsulated UI elements to integrate and form complex interfaces. Additionally, React uses a virtual 
+                            Document Object Model (DOM) for efficient rendering, rather than directly manipulating the real DOM, 
+                            which can consume many resources. <br><br>
+                            
+                            React encourages declarative programming, which means you can write to declare how the UI should look 
+                            based on the application's state, rather than writing actual steps for updating the UI. Declarative 
+                            programming makes code easier to understand, maintain, and debug.<br><br>
+                            
+                            React also has an extensive ecosystem of supporting tools and libraries: 
+                            <ul id="bulletlist">
+                                <li>React Router is used for navigation management</li> 
+                                <li>Redux maintains application state</li>
+                                <li>React Native is used in building mobile apps using react syntax</li>
+                            </ul> 
+                            </p><br><br>
+                        <p>
+                            With its speediness, flexibility, and friendliness among developers, react has become one of the 
+                            most popular web application development tools in modern times.
+                        </p>
+                    </div>
+                    <!-- <div class="topic_subHead">
+                        <h2>What is the Signficance of React?</h2>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- publish react application -->
             <section class="topic_container" id="host_react">
                 <div class="topic_head">
-                    <h1>Publishing and Hosting a React Application</h1>
+                    <h1>Publishing a React Application</h1>
                 </div>
                 <div class="topic_container">
                     <p>
@@ -438,7 +464,7 @@
                                 <li>Choose Hosting: Select a provider like Netlify or AWS.</li>
                                 <li>Deploy: Push your app to the chosen host.</li>
                                 <li>Domain & SSL: Set up a custom domain and secure it with SSL.</li>
-                                <li>5. Continuous Deployment: Automate updates with continuous deployment.</li>
+                                <li>Continuous Deployment: Automate updates with continuous deployment.</li>
                             </ol><br>
                         </p>
                         <ul class="funky_list">
